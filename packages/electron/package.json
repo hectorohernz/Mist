@@ -1,0 +1,19 @@
+{
+  "name": "mist-electron",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"cd ../app && npm start\" \"wait-on http://localhost:3000 && electron .\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^5.3.0",
+    "electron": "^11.1.1",
+    "electron-builder": "^22.9.1",
+    "electron-is-dev": "^1.2.0",
+    "wait-on": "^5.2.0"
+  }
+}

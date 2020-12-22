@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const path = require("path");
-const result = require('dotenv').config({ path: 'src/dev.env' })
+require('dotenv').config({ path: 'src/dev.env' })
 app.use(express.json());
 
 app.use("/helloworld", require("./routes/helloworld")); // Defining User route
